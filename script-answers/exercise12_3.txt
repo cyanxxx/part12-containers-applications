@@ -1,0 +1,16 @@
+  GNU nano 4.8                                                             typescript                                                                       Script started on 2022-04-17 17:56:57+08:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="156" LINES="63"]
+^[]0;root@DESKTOP-EF99821: /usr/src^Groot@DESKTOP-EF99821:/usr/src# exit^H^H^H^Hdocker container run -it ubuntu bash^M^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^>CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+b5bbbee08c6c        ubuntu              "bash"              59 minutes ago      Exited (0) 53 seconds ago                       adoring_khorana
+d706ed77551a        ubuntu              "bash"              About an hour ago   Exited (1) 59 minutes ago                       cranky_mclean
+^[]0;root@DESKTOP-EF99821: /usr/src^Groot@DESKTOP-EF99821:/usr/src# docker start s^H^[[Kado^G^G^Gring^G^G^G_ko^H^[[Kh^H^[[Khorama^H^[[K^H^[[Kna -i
+^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^M^[[K^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# cd /src^H ^H^H ^H^H ^Hurs^H ^H^H ^Hsr/a^H ^Hsrc/app/
+^[]0;root@b5bbbee08c6c: /usr/src/app^Groot@b5bbbee08c6c:/usr/src/app# ls
+index.js
+^[]0;root@b5bbbee08c6c: /usr/src/app^Groot@b5bbbee08c6c:/usr/src/app# vi^H ^H^H ^Hanno^H ^H^H ^H^H ^H^H ^Hnano index.js
+^[[?2004h^[[?1049h^[[22;0;0t^[[1;63r^[(B^[[m^[[4l^[[?7h^[[39;49m^[[?1h^[=^[[?1h^[=^[[?25l^[[39;49m^[(B^[[m^[[H^[[2J^[[61;72H^[(B^[[0;7m[ Reading... ]^[(B^[>index.js
+^[]0;root@b5bbbee08c6c: /usr/src/app^Groot@b5bbbee08c6c:/usr/src/app# nano index.js
+^[[?2004h^[[?1049h^[[22;0;0t^[[1;63r^[(B^[[m^[[4l^[[?7h^[[39;49m^[[?1h^[=^[[?1h^[=^[[?25l^[[39;49m^[(B^[[m^[[H^[[2J^[[61;72H^[(B^[[0;7m[ Reading... ]^[(B^[>exit
+^[]0;root@DESKTOP-EF99821: /usr/src^Groot@DESKTOP-EF99821:/usr/src# exir^H^[[Kt
+exit
+
+Script done on 2022-04-17 17:59:21+08:00 [COMMAND_EXIT_CODE="0"]

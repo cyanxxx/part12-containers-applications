@@ -1,0 +1,66 @@
+Script started on 2022-04-17 16:58:25+08:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="157" LINES="30"]
+^[]0;root@DESKTOP-EF99821: ~^Groot@DESKTOP-EF99821:~# docker container run -it ubuntu bash
+^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^M^[[K^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# echo > /etc/apt/sources.list
+^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kcat >> /etc/apt/sources.list <<EOF
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal universe
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates universe
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal multiverse
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates multiverse
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security universe
+> deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security multiverse
+> EOF
+^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted
+eb http:bash: deb: command not found
+//mirrors.tuna.tsinghua^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted
+b http://mirrorbash: deb: command not found
+s.tuna.t^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal universe
+bash: deb: command not found
+//mirrors.tuna.tsinghua.^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates universe
+//mirrorbash: deb: command not found
+s.tuna.tsinghua.^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal multiverse
+deb http://mirrors.tunabash: deb: command not found
+^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates multiverse
+tp://mirrors.tubash: deb: command not found
+^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+eb http://mirrors.tuna.bash: deb: command not found
+^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted
+eb http://mirrobash: deb: command not found
+rs.tuna.^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security universe
+bash: deb: command not found
+://mirrors.tuna^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# ^[[Kdeb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security multiverse^H ^H^H ^H^H ^H>^M0% [Working]^M            ^MGet:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu focal InRelease [265 kB]
+^M0% [1 InRelease 2570 B/265 kB 1%]^M0% [1 InRelease 47.6 kB/265 kB 18%]^M                                   ^M0% [1 InRelease 113 kB/265 kB 43%]^M0% [1 In>^M0% [2 InRelease 2570 B/114 kB 2%]^M0% [2 InRelease 8378 B/114 kB 7%]^M                                 ^M0% [Working]^M            ^MGet:3 http://mirrors>^M0% [3 InRelease 2570 B/108 kB 2%]^M0% [3 InRelease 2570 B/108 kB 2%]^M                                 ^M0% [Working]^M            ^MGet:4 http://mirrors>^M0% [4 InRelease 2570 B/114 kB 2%]^M0% [4 InRelease 5474 B/114 kB 5%]^M                                 ^M0% [Working]^M14% [Waiting for headers]^M       >^M14% [5 Packages 2572 B/33.4 kB 8%]^M                                  ^M15% [Waiting for headers]^M                         ^MGet:6 http://mirrors.tuna.t>^M15% [6 Packages 767 B/1275 kB 0%]^M15% [5 Packages store 0 B] [6 Packages 767 B/1275 kB 0%]^M                                                        ^M15>^M20% [7 Packages 548 B/11.3 MB 0%]                                                                                                           292 kB/s 1min>^M62% [8 Packages 7445 B/177 kB 4%]                                                                                                               243 kB/s >^M63% [7 Packages store 0 B] [9 Packages 1924 B/30.3 kB 6%]                                                                                       243 kB/s >^M63% [7 Packages store 0 B] [10 Packages 371 B/2146 kB 0%]                                                                                       243 kB/s >^M72% [11 Packages 498 B/1178 kB 0%]                                                                                                               675 kB/s>^M77% [12 Packages 2904 B/1153 kB 0%]                                                                                                              675 kB/s>^M82% [13 Packages 2022 B/51.2 kB 4%]                                                                                                              675 kB/s>^M83% [14 Packages 0 B/26.0 kB 0%]                                                                                                                 675 kB/s>^M84% [15 Packages 8192 B/1731 kB 0%]                                                                                                              675 kB/s>^M90% [16 Packages 1502 B/25.8 kB 6%]                                                                                                              675 kB/s>^M91% [15 Packages store 0 B] [17 Packages 2568 B/1104 kB 0%]                                                                                      675 kB/s>^M96% [18 Packages 5532 B/868 kB 1%]                                                                                                               738 kB/s>^MReading package lists... 0%^M^MReading package lists... 0%^M^MReading package lists... 0%^M^MReading package lists... 6%^M^MReading package lists... 6%^M>^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# apt-install^H ^H^H ^H^H ^H^H ^H^H ^H^H ^H^H ^Hget install -y an^H ^H^H ^Hnanop^H ^H
+^MReading package lists... 0%^M^MReading package lists... 0%^M^MReading package lists... 0%^M^MReading package lists... 6%^M^MReading package lists... 6%^M>^MBuilding dependency tree... 0%^M^MBuilding dependency tree... 0%^M^MBuilding dependency tree... 0%^M^MBuilding dependency tree... 50%^M^MBuilding depende>^MReading state information... 0%^M^MReading state information... 0%^M^MReading state information... Done^M
+Suggested packages:
+  GNU nano 4.8                                                             typescript                                                                       ^MReading state information... 0%^M^MReading state information... 0%^M^MReading state information... Done^M
+Suggested packages:
+  hunspell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+Need to get 269 kB of archives.
+After this operation, 868 kB of additional disk space will be used.
+^M0% [Working]^M            ^MGet:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu focal/main amd64 nano amd64 4.8-1ubuntu1 [269 kB]
+^M1% [1 nano 2570 B/269 kB 1%]^M28% [1 nano 92.6 kB/269 kB 34%]^M                               ^M100% [Working]^M              ^MFetched 269 kB in 1s (194>debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nano.
+(Reading database ... ^M(Reading database ... 5%^M(Reading database ... 10%^M(Reading database ... 15%^M(Reading database ... 20%^M(Reading database ... 25>Preparing to unpack .../nano_4.8-1ubuntu1_amd64.deb ...
+Unpacking nano (4.8-1ubuntu1) ...
+Setting up nano (4.8-1ubuntu1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor)>update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) doe>^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# cd /^H ^H^H ^H^H ^H^H ^H^Gmrk^H ^H^H ^Hkdir /user^H ^H^H ^Hr/src/app
+^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# vi^H ^H^H ^Hanno ^G~^H ^H^H ^H^H ^H^H ^H^H ^H^H ^H^G^G^G^Gnanop^H ^H om^H ^H^H ^Hindex.js
+^[[?2004h^[[?1049h^[[22;0;0t^[[1;30r^[(B^[[m^[[4l^[[?7h^[[39;49m^[[?1h^[=^[[?1h^[=^[[?25l^[[39;49m^[(B^[[m^[[H^[[2J^[[28;73H^[(B^[[0;7m[ New File ]^[(B^[[m>^[[0m^[[01;36mbin^[[0m  ^[[01;34mboot^[[0m  ^[[01;34mdev^[[0m  ^[[01;34metc^[[0m  ^[[01;34mhome^[[0m  ^[[01;36mlib^[[0m  ^[[01;36mlib32^[[0m  ^[[01;36mlib6>^[]0;root@b5bbbee08c6c: /^Groot@b5bbbee08c6c:/# cd /usr/src/app/
+^[]0;root@b5bbbee08c6c: /usr/src/app^Groot@b5bbbee08c6c:/usr/src/app# ls
+^[]0;root@b5bbbee08c6c: /usr/src/app^Groot@b5bbbee08c6c:/usr/src/app# ls^H^Hcd /usr/src/app/^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^H^[[11@nano index.js
+^[[?2004h^[[?1049h^[[22;0;0t^[[1;30r^[(B^[[m^[[4l^[[?7h^[[39;49m^[[?1h^[=^[[?1h^[=^[[?25l^[[39;49m^[(B^[[m^[[H^[[2J^[[28;73H^[(B^[[0;7m[ New File ]^[(B^[[m>^[]0;root@b5bbbee08c6c: /usr/src/app^Groot@b5bbbee08c6c:/usr/src/app# ls^H^H^[[11@nano index.js
+^[[?2004h^[[?1049h^[[22;0;0t^[[1;30r^[(B^[[m^[[4l^[[?7h^[[39;49m^[[?1h^[=^[[?1h^[=^[[?25l^[[39;49m^[(B^[[m^[[H^[[2J^[[28;73H^[(B^[[0;7m[ New File ]^[(B^[[m>index.js
+^[]0;root@b5bbbee08c6c: /usr/src/app^Groot@b5bbbee08c6c:/usr/src/app# exit
+exit
+ex^[]0;root@DESKTOP-EF99821: ~^Groot@DESKTOP-EF99821:~# exit
+exit
+
+Script done on 2022-04-17 17:03:50+08:00 [COMMAND_EXIT_CODE="0"]
