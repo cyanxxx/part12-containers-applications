@@ -1,0 +1,14 @@
+###
+POST http://localhost:3000/todos
+content-type: application/json
+
+{
+    "text": "hey"
+}
+###
+PUT http://localhost:3000/todos/625cec1bc7d620309331809a
+content-type: application/json
+
+{
+    "text": "hey code"
+}
