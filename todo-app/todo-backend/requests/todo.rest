@@ -12,3 +12,11 @@ content-type: application/json
 {
     "text": "hey code"
 }
+
+###
+POST http://localhost:3000/todos
+content-type: application/json
+
+{
+    "text": "todo!"
+}

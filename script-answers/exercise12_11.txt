@@ -1,0 +1,44 @@
+Script started on 2022-04-18 14:11:02+08:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="142" LINES="10"]
+]0;root@DESKTOP-EF99821: /usr/src/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-EF99821:/usr/src/part12-containers-applications/todo-app/todo-backend# docker container ls
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                     NAMES
+76208bf6357a        redis               "docker-entrypoint.s…"   10 minutes ago      Up 10 minutes       0.0.0.0:6378->6379/tcp    todo-backend_redis_1
+5e4a823c23b3        mongo               "docker-entrypoint.s…"   About an hour ago   Up 24 minutes       0.0.0.0:3456->27017/tcp   todo-backend_mongo_1
+]0;root@DESKTOP-EF99821: /usr/src/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-EF99821:/usr/src/part12-containers-applications/todo-app/todo-backend# docker exec -it 5e4a
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+]0;root@DESKTOP-EF99821: /usr/src/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-EF99821:/usr/src/part12-containers-applications/todo-app/todo-backend# docker exec -it 5e4a basjh[K[Kh
+]0;root@5e4a823c23b3: /root@5e4a823c23b3:/# ew  redis-cli
+bash: redis-cli: command not found
+]0;root@5e4a823c23b3: /root@5e4a823c23b3:/# exit
+exit
+]0;root@DESKTOP-EF99821: /usr/src/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-EF99821:/usr/src/part12-containers-applications/todo-app/todo-backend# docker exec -it 5e4a bash[K bash[C[1P bash[1P bash[1P bash[1P bash7 bash6 bash2 bash
+[?2004hroot@76208bf6357a:/data# redis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[0;90;49m pattern[0m[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m [0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "todo"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[0;90;49m key[0m[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET t[0;90;49m [0m[21C[0K127.0.0.1:6379> GET to[0;90;49m [0m[22C[0K127.0.0.1:6379> GET tod[0;90;49m [0m[23C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[24C[0K127.0.0.1:6379> GET todo[24C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> GET todo[0;90;49m [0m[24C[0K127.0.0.1:6379> KEYS *[0;90;49m [0m[22C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[24C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[23C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[22C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[21C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[20C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[19C[0K127.0.0.1:6379> GE todo[18C[0K127.0.0.1:6379> G todo[17C[0K127.0.0.1:6379>  todo[16C[0K127.0.0.1:6379> S todo[17C[0K127.0.0.1:6379> SE todo[18C[0K127.0.0.1:6379> SET todo[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[19C[0K127.0.0.1:6379> SET todo[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[24C[0K127.0.0.1:6379> SET todo [0;90;49mvalue [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[25C[0K127.0.0.1:6379> SET todo 9[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[26C[0K127.0.0.1:6379> SET todo 90[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[27C[0K127.0.0.1:6379> SET todo 900[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[28C[0K127.0.0.1:6379> SET todo 9001[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[29C[0K127.0.0.1:6379> SET todo 9001[29C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> SET todo 9001[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[29C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[24C[0K127.0.0.1:6379> GET todo[24C
+"31"
+127.0.0.1:6379> [0K127.0.0.1:6379> GET todo[0;90;49m [0m[24C[0K127.0.0.1:6379> SET todo 9001[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[29C[0K127.0.0.1:6379> GET todo[0;90;49m [0m[24C[0K127.0.0.1:6379> SET todo 9001[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[29C[0K127.0.0.1:6379> SET todo 9001[29C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> SET todo 9001[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m[29C[0K127.0.0.1:6379> SET todo 9001[29C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[0;90;49m key [key ...][0m[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL t[0;90;49m [key ...][0m[21C[0K127.0.0.1:6379> DEL to[0;90;49m [key ...][0m[22C[0K127.0.0.1:6379> DEL tod[0;90;49m [key ...][0m[23C[0K127.0.0.1:6379> DEL todo[0;90;49m [key ...][0m[24C[0K127.0.0.1:6379> DEL todo[24C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> DEL todo[0;90;49m [key ...][0m[24C[0K127.0.0.1:6379> DEL todo[24C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> DEL todo[0;90;49m [key ...][0m[24C[0K127.0.0.1:6379> DEL todo[24C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004hroot@76208bf6357a:/data# exit
+[?2004lexit
+]0;root@DESKTOP-EF99821: /usr/src/part12-containers-applications/todo-app/todo-backendroot@DESKTOP-EF99821:/usr/src/part12-containers-applications/todo-app/todo-backend# exit
+exit
+
+Script done on 2022-04-18 14:51:53+08:00 [COMMAND_EXIT_CODE="0"]
